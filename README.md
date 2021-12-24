@@ -14,7 +14,7 @@ I used LDA for topic modeling and the VADER sentiment analyzer for sentiment ana
 # Topic-modeling
 
 a. Scraping tweets:
-I extracted the tweets with hashtags **GME** and **GameStop**. As the goal was to analyze the shift in topics, I extracted the data for three separate time periods i.e. Oct'20-Dec'20 (Pre), Jan'21-Mar'21 and Apr'21-Sep'21 (Post). As Tweepy Python library can scrape the tweets of only the last 7 days, I used the snscrape package to scrape the older tweets for the stated timelines.
+I extracted the tweets with hashtags **GME** and **GameStop**. As the goal was to analyze the shift in topics, I extracted the data for three separate time periods i.e. Oct'20-Dec'20 (Pre), Jan'21-Mar'21 and Apr'21-Sep'21 (Post). As Tweepy Python library can scrape the tweets of only the last 7 days, I used the snscraper package to scrape the older tweets for the stated timelines.
 
 b. Data cleaning and exploratory data analysis:
 Data cleaning involved:
@@ -23,3 +23,8 @@ Data cleaning involved:
 
 Exploratory data analysis:
 - Top 20 words by count for each period: This gives an idea on the top relevant words from tweets of each period
+![image](https://user-images.githubusercontent.com/68967551/147367363-20275311-a75f-4bae-b953-40418261698d.png)
+
+- Word cloud: Shows the top keywords of each period
+![image](https://user-images.githubusercontent.com/68967551/147367537-d0c2f174-df1a-492c-8d47-cf80c29538b8.png)
+
