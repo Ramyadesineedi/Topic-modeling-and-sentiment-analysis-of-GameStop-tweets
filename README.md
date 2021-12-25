@@ -18,7 +18,7 @@ I extracted the tweets with hashtags **GME** and **GameStop**. As the goal was t
 
 b. Data cleaning and exploratory data analysis:
 Data cleaning involved:
-- Removing punctuations, URLs, hyperlinks, emojis, stopwords and frequently appearing collection of words (ex: gamestop, gme, game, dont, like, ps5, xbox etc.)
+- Removing punctuations, URLs, hyperlinks, emojis, stopwords and frequently appearing collection of words (ex: gamestop, gme, game, don't, like, ps5, xbox etc.)
 - Making individual words from the sentences, lemmatization and creating a word corpus from all the sentences
 
 Exploratory data analysis:
@@ -35,24 +35,24 @@ c. Topic modeling results:
 The topic modeling output and the word cloud provides the below inference:
 Before GameStop became a memestock, people were primarily discussing about the GameStop products, orders, and retail competition in twitter.
 Once the frenzy started in Jan'21 the major tweets included topics regarded shorting, reddit, stock trading, robinhood, SEC
-Post April, there was a slight shift in the topics. While people were still tweeting about the GameStop stock, they also started tewwting abount the products in general. This indicates that the frenzy related to the GameStop as a memestock has slowly started dying down and we can expect that the stock price will start stabilizing.
+Post April, there was a slight shift in the topics. While people were still tweeting about the GameStop stock, they also started tweeting about the products in general. This indicates that the frenzy related to the GameStop as a memestock has slowly started dying down and we can expect that the stock price will start stabilizing.
 
 # Sentiment Analysis using VADER
 
 For this I took the stock prices and tweets for the month of September.  
 Using the SentimentIntensityAnalyzer from VADER, we can get whether the tweet has a positive, negative, or neutral sentiment and the score tells us how positive, negative or neutral the sentence is. We also get the compound score which is computed by summing the valence scores of each word in the lexicon, adjusted according to the rules, and then normalized to be between -1 (most extreme negative) and +1 (most extreme positive).
-- If the compund score >= 0.05, then the sentiment is positive
-- If the compund score <= -0.05, then the sentiment is negative
-- If the compund score < 0.05 and > -0.05, then the sentiment is neutral
+- If the compound score >= 0.05, then the sentiment is positive
+- If the compound score <= -0.05, then the sentiment is negative
+- If the compound score < 0.05 and > -0.05, then the sentiment is neutral
 
-Once I got the sentiment scores and sentiments of the tweets, I took the count of all positive sentiment tweets by each day fo september to get the total positive tweets by each day.
+Once I got the sentiment scores and sentiments of the tweets, I took the count of all positive sentiment tweets by each day for September to get the total positive tweets by each day.
 
 ![image](https://user-images.githubusercontent.com/68967551/147390796-8765b659-b624-4cbd-8e3c-4f227ff7d7c5.png)
 
-Then I compared this with each day's opening price with the number of positive tweets to see if the number of posiive tweets increased with respect to previous day and there was an increase in opening price with respect to previous day. 
+Then I compared this with each day's opening price with the number of positive tweets to see if the number of positive tweets increased with respect to previous day and there was an increase in opening price with respect to previous day. 
 Result: In 47% of the occasions, the tweet sentiment reflected the next day's stock movement.
 
-We cannot conclusively state that the positive sentiment in twitter led to increase in stock prices because there are many other external factos invloved which drive the stock price movement, but we can use this analysis in a more directional and indicative manner. This cannot be used as a tool for long term investments.  
+We cannot conclusively state that the positive sentiment in twitter led to increase in stock prices because there are many other external factors involved which drive the stock price movement, but we can use this analysis in a more directional and indicative manner. This cannot be used as a tool for long term investments.  
 
 
 
