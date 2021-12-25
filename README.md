@@ -52,6 +52,8 @@ Once I got the sentiment scores and sentiments of the tweets, I took the count o
 Then I compared this with each day's opening price with the number of positive tweets to see if the number of posiive tweets increased with respect to previous day and there was an increase in opening price with respect to previous day. 
 Result: In 47% of the occasions, the tweet sentiment reflected the next day's stock movement.
 
+We cannot conclusively state that the positive sentiment in twitter led to increase in stock prices because there are many other external factos invloved which drive the stock price movement, but we can use this analysis in a more directional and indicative manner. This cannot be used as a tool for long  term investments.  
+
 
 
 
