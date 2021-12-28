@@ -9,7 +9,7 @@ The objective of this project was to:
 1. Analyze how twitter reacted to this frenzy and get insights on the shift in the sentiment and topics discussed
 2. Analyze if the shift in sentiment is impacting the immediate stock price movement or not
 
-I used LDA for topic modeling and the VADER (Valence Aware Dictionary and sEntiment Reasoner) sentiment analyzer for sentiment analysis.
+I used LDA for topic modeling and VADER (Valence Aware Dictionary and sEntiment Reasoner) sentiment analyzer for sentiment analysis.
 
 # Topic modeling
 
